@@ -6,7 +6,7 @@ import Contact from "./Contact"; // Ensure path is correct
 const socialLinks = [
   { Icon: FiGithub, url: "https://github.com/waskar2mohit" },
   { Icon: FiInstagram, url: "https://instagram.com/waskar.mohit" },
-  { Icon: FiLinkedin, url: "https://linkedin.com/in/mohit-waskar" },
+  { Icon: FiLinkedin, url: "https://www.linkedin.com/in/mohit-waskar-b70355319/" },
 ];
 
 const Footer = () => {
