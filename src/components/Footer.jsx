@@ -139,8 +139,7 @@ const Footer = () => {
               >
                 Close <FiX size={20} />
               </button>
-              
-              <Contact />
+              <Contact isHero={false} />
             </motion.div>
           </motion.div>
         )}
