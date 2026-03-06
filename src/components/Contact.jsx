@@ -43,14 +43,6 @@ const Contact = ({ onClose, isHero }) => {
         </p>
         
         {/* Only show close button if it's NOT in the hero section */}
-        {!isHero && (
-          <button 
-            onClick={onClose}
-            className="px-8 py-3 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full font-bold hover:shadow-lg hover:shadow-violet-500/30 transition-all"
-          >
-            Back to Site
-          </button>
-        )}
       </motion.div>
     );
   }
