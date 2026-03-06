@@ -41,8 +41,6 @@ const Contact = ({ onClose, isHero }) => {
         <p className="text-gray-400 mb-8">
           Thanks for reaching out! I'll get back to you at your email soon.
         </p>
-        
-        {/* Only show close button if it's NOT in the hero section */}
       </motion.div>
     );
   }
