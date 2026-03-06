@@ -13,10 +13,13 @@ const Contact = ({ onClose, isHero }) => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    data.access_key = "ab9f4d3b-2d8d-4ebc-990a-573801070215"; 
+    data.access_key = "ab9f4d3b-2d8d-4ebc-990a-573801070215";
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
       body: JSON.stringify(data),
     });
     const result = await response.json();
@@ -29,15 +32,17 @@ const Contact = ({ onClose, isHero }) => {
   // --- SUCCESS SCREEN ---
   if (isSubmitted) {
     return (
-      <motion.div 
-        initial={{ opacity: 0, scale: 0.9 }} 
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         className="text-center py-10 px-6 bg-white/10 border border-white/20 backdrop-blur-xl rounded-2xl shadow-2xl"
       >
         <div className="flex justify-center mb-6">
           <FiCheckCircle className="text-6xl text-green-400 animate-bounce" />
         </div>
-        <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">Message Sent!</h3>
+        <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+          Message Sent!
+        </h3>
         <p className="text-gray-400 mb-8">
           Thanks for reaching out! I'll get back to you at your email soon.
         </p>
@@ -47,19 +52,28 @@ const Contact = ({ onClose, isHero }) => {
 
   // --- FORM SCREEN ---
   return (
-    <section id="contact" className={`flex items-center justify-center ${!isHero ? 'px-4 py-10' : ''}`}>
+    <section
+      id="contact"
+      className={`flex items-center justify-center ${!isHero ? "px-4 py-10" : ""}`}
+    >
       <div className="w-full max-w-lg bg-white/10 border border-white/20 backdrop-blur-xl p-6 md:p-8 rounded-2xl shadow-2xl">
-        
         <div className="text-center mb-6">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
-            Get in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-violet-600">Touch</span>
+            Get in{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-violet-600">
+              Touch
+            </span>
           </h2>
-          <p className="text-gray-400 text-sm">Your message goes straight to my Gmail.</p>
+          <p className="text-gray-400 text-sm">
+            Your message goes straight to my Gmail.
+          </p>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div className="flex flex-col gap-1">
-            <label className="text-xs font-medium text-gray-300 ml-1">Name</label>
+            <label className="text-xs font-medium text-gray-300 ml-1">
+              Name
+            </label>
             <input
               {...register("name", { required: true })}
               type="text"
@@ -69,7 +83,9 @@ const Contact = ({ onClose, isHero }) => {
           </div>
 
           <div className="flex flex-col gap-1">
-            <label className="text-xs font-medium text-gray-300 ml-1">Email</label>
+            <label className="text-xs font-medium text-gray-300 ml-1">
+              Email
+            </label>
             <input
               {...register("email", { required: true })}
               type="email"
@@ -79,7 +95,9 @@ const Contact = ({ onClose, isHero }) => {
           </div>
 
           <div className="flex flex-col gap-1">
-            <label className="text-xs font-medium text-gray-300 ml-1">Message</label>
+            <label className="text-xs font-medium text-gray-300 ml-1">
+              Message
+            </label>
             <textarea
               {...register("message", { required: true })}
               rows="3"
