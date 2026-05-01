@@ -19,7 +19,7 @@ const ProjectSection = () => {
     {
       id: 2,
       title: "Placement Predictor",
-      imageSrc: "/images/ProjectSnap/placement02.png",
+      imageSrc: "/images/ProjectSnap/placement.png",
       tech: "Flask, Gemini AI, React",
     },
     {
