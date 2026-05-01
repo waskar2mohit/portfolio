@@ -24,15 +24,22 @@ const ProjectSection = () => {
     },
     {
       id: 3,
-      title: "AI Quiz Master",
-      imageSrc: "/images/ProjectSnap/got.png",
-      tech: "Python, OpenAI, React",
+      title: "StackIT Q n A",
+      imageSrc: "/images/ProjectSnap/stackIt.png",
+      tech: "MERN Stack"
     },
   ];
 
   const gotHandleRedirect = () => {
     window.open(
       "https://go-tfan-web.vercel.app/",
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
+  const stackItHandleRedirect = () => {
+    window.open(
+      "https://stackit-22ko.onrender.com/",
       "_blank",
       "noopener,noreferrer",
     );
@@ -127,7 +134,12 @@ const ProjectSection = () => {
                       if (project.title === "Game of Thrones Fanpage") {
                         gotHandleRedirect();
                         }
+                      else if (project.title === "StackIT Q n A") {
+                        stackItHandleRedirect();
+                      }
+
                       }}
+                      
                     className="mt-6 w-full py-3 bg-white text-black font-bold rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300 transform active:scale-95"
                   >
                     View Project
