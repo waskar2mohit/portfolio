@@ -5,7 +5,7 @@ const skills = ["React", "JavaScript", "Tailwind CSS", "Node.js", "Git"];
 const projects = [
   {
     id: "01",
-    title: "Portfolio Website",
+    title: "Learnig React",
     desc: "Responsive personal brand site with fluid animations.",
     tech: "React · Framer Motion",
     accent: "#a78bfa",
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     id: "03",
-    title: "StackIt",
+    title: "API handling & MongoDB setup",
     desc: "A full-stack MERN discussion platform with real-time voting and secure auth.",
     tech: "MongoDB · Express · React · Node.js",
     accent: "#60a5fa",
