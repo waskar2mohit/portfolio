@@ -17,6 +17,13 @@ const projects = [
     tech: "SQL · Oracle Apex · Oracle SQL Developer Data Modeler",
     accent: "#34d399",
   },
+  {
+    id: "03",
+    title: "StackIt",
+    desc: "A full-stack MERN discussion platform with real-time voting and secure auth.",
+    tech: "MongoDB · Express · React · Node.js",
+    accent: "#60a5fa",
+  },
 ];
 
 export default function Experience() {
