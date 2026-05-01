@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const skills = ["React", "JavaScript", "Tailwind CSS", "Node.js", "Git"];
+const skills = ["JavaScript","React", "Tailwind CSS","Git","Express","Node.js"];
 
 const projects = [
   {
@@ -50,7 +50,7 @@ export default function Experience() {
           className="mb-14"
         >
           <p className="text-xs font-mono tracking-[0.4em] uppercase text-purple-400 mb-3">
-            Frontend Developer And Data Enthusiast
+            Full Stack Developer And Data Enthusiast
           </p>
           <h2
             className="text-6xl font-black tracking-tighter"
